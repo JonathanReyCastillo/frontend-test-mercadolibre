@@ -1,0 +1,12 @@
+# # build environment
+FROM arm32v7/node:16.14.2 as build
+WORKDIR /app
+# #ENV PATH /app/node_modules/.bin:$PATH
+COPY . .
+
+FROM arm32v7/nginx:stable
+COPY ./dist /usr/share/nginx/html
+# new
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+EXPOSE 80 443
+CMD ["nginx", "-g", "daemon off;"]

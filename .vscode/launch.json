@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Dev Test-Meli",
+            "command": "yarn run dev"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Start Test-Meli",
+            "command": "yarn run start"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Test Test-Meli",
+            "command": "yarn run test"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Lint Test-Meli",
+            "command": "yarn run lint"
+        },
+        {
+            "type": "node-terminal",
+            "request": "launch",
+            "name": "Lint:Fix Test-Meli",
+            "command": "yarn run lint:fix"
+        }
+    ]
+}
